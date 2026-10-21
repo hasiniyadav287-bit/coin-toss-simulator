@@ -1,0 +1,25 @@
+import random
+print("=== Coin Toss Simulator ===")
+while True:
+    choice = input("Toss the coin? (yes/no): ").lower()
+    if choice == "yes":
+        result = random.choice(["Heads", "Tails"])
+        print("Result:", result)
+    elif choice == "no":
+        print("Thanks for playing!")
+        break
+    else:
+        print("Please enter yes or no.")
+
+
+OUTPUT:
+
+=== Coin Toss Simulator ===
+Toss the coin? (yes/no): yes
+Result: Tails
+Toss the coin? (yes/no): yes
+Result: Tails
+Toss the coin? (yes/no): yes
+Result: Heads
+Toss the coin? (yes/no): no
+Thanks for playing!
